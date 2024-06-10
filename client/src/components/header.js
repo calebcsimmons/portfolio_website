@@ -2,7 +2,7 @@ import React from 'react';
 import { colors, widths } from '../styles';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import logo from '../assets/space_cat_logo.png';
+import logo from '../assets/professional_headshot.png';
 
 /**
  * Header renders the top navigation
@@ -19,8 +19,8 @@ const Header = ({ children }) => {
                 <Logo src={logo} />
               </LogoContainer>
               <Title>
-                <h3>Catstronaut</h3>
-                <div>Kitty space academy</div>
+                <h3>Caleb C. Simmons</h3>
+                <div>Personal Portfolio</div>
               </Title>
             </HomeButton>
           </HomeLink>
@@ -39,10 +39,10 @@ const HeaderBar = styled.div({
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  borderBottom: `solid 1px ${colors.pink.light}`,
+  borderBottom: `solid 1px ${colors.red.light}`,
   boxShadow: '0px 1px 5px 0px rgba(0,0,0,0.15)',
   padding: '5px 30px',
-  minHeight: 80,
+  height: 80,
   backgroundColor: 'white',
 });
 
@@ -65,15 +65,15 @@ const HomeButton = styled.div({
   color: colors.accent,
   alignItems: 'center',
   ':hover': {
-    color: colors.pink.dark,
+    color: colors.red.dark,
   },
 });
 
 const LogoContainer = styled.div({ display: 'flex', alignSelf: 'center' });
 
 const Logo = styled.img({
-  height: 60,
-  width: 60,
+  height: 120,
+  width: 120,
   marginRight: 8,
 });
 

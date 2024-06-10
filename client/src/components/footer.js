@@ -9,9 +9,9 @@ import { colors, ApolloIcon } from '../styles';
 const Footer = ({ children }) => {
   return (
     <FooterContainer>
-      {new Date().getFullYear()} ©{' '}
+      {new Date().getFullYear()} ©{' Caleb C. Simmons '}
       <LogoContainer>
-        <ApolloIcon width="100px" height="40px" />
+        {/* <ApolloIcon width="100px" height="40px" /> */}
       </LogoContainer>
     </FooterContainer>
   );
