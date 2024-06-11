@@ -1,84 +1,39 @@
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('../data/cards.json')
-        .then(response => response.json())
-        .then(cards => {
-            const container = document.querySelector('.cards-wrapper');
-            cards.forEach(card => {
-                const cardElement = document.createElement('div');
-                cardElement.classList.add('cardcontainer');
-                
-                const photoDiv = document.createElement('div');
-                photoDiv.classList.add('photo');
-                
-                const headerImage = document.createElement('img');
-                headerImage.src = card.headerImage;
-                
-                const techDiv = document.createElement('div');
-                techDiv.classList.add('tech');
-                
-                card.techImages.forEach(techImage => {
-                    const img = document.createElement('img');
-                    img.src = techImage;
-                    techDiv.appendChild(img);
-                    techDiv.appendChild(document.createElement('br'));
-                });
-                
-                photoDiv.appendChild(headerImage);
-                photoDiv.appendChild(techDiv);
-                
-                const contentDiv = document.createElement('div');
-                contentDiv.classList.add('content');
-                
-                const titleP = document.createElement('p');
-                titleP.classList.add('txt4');
-                titleP.textContent = card.title;
-                
-                const descriptionP = document.createElement('p');
-                descriptionP.classList.add('txt5');
-                descriptionP.textContent = card.description;
-                
-                contentDiv.appendChild(titleP);
-                contentDiv.appendChild(descriptionP);
-                
-                const footerDiv = document.createElement('div');
-                footerDiv.classList.add('footer');
-                
-                const readMoreP = document.createElement('p');
-                const readMoreA = document.createElement('a');
-                readMoreA.classList.add('waves-effect', 'waves-light', 'btn');
-                readMoreA.href = '#';
-                readMoreA.textContent = 'Read More';
-                readMoreP.appendChild(readMoreA);
-                readMoreP.appendChild(document.createElement('a')).classList.add('heart');
-                
-                const infoP = document.createElement('p');
-                infoP.classList.add('txt3');
-                
-                const clockI = document.createElement('i');
-                clockI.classList.add('far', 'fa-clock');
-                infoP.appendChild(clockI);
-                
-                infoP.appendChild(document.createTextNode(card.date));
-                
-                const commentsSpan = document.createElement('span');
-                commentsSpan.classList.add('comments');
-                
-                const eyeI = document.createElement('i');
-                eyeI.classList.add('fas', 'fa-eye');
-                commentsSpan.appendChild(eyeI);
-                
-                commentsSpan.appendChild(document.createTextNode(` ${card.views} views`));
-                
-                infoP.appendChild(commentsSpan);
-                footerDiv.appendChild(readMoreP);
-                footerDiv.appendChild(infoP);
-                
-                cardElement.appendChild(photoDiv);
-                cardElement.appendChild(contentDiv);
-                cardElement.appendChild(footerDiv);
-                
-                container.appendChild(cardElement);
+$(document).ready(function() {
+    console.log("Document ready");
+
+    // Load JSON data
+    $.getJSON('./data/project.json', function(data) {
+        console.log("JSON loaded:", data);
+        
+        // Loop through each project in the JSON data
+        $.each(data, function(index, project) {
+            console.log("Processing project:", project);
+            
+            // Create card HTML
+            var cardHTML = '<div class="cardcontainer">' +
+                               '<div class="photo">' +
+                                   '<img src="' + project.headerImage + '">' +
+                                   '<div class="tech">';
+                                    
+            // Loop through tech images
+            $.each(project.techImages, function(index, techImage) {
+                cardHTML += '<img src="' + techImage + '"><br>';
             });
-        })
-        .catch(error => console.error('Error loading cards:', error));
+                                    
+            cardHTML += '</div>' +
+                        '</div>' +
+                        '<div class="content">' +
+                            '<p class="txt4">' + project.title + '</p>' +
+                            '<p class="txt5">' + project.description + '</p>' +
+                        '</div>' +
+                        '<div class="footer">' +
+                            '<p><a class="waves-effect waves-light btn" href="#">Read More</a><a class="heart"></a></p>' +
+                            '<p class="txt3"><i class="far fa-clock"></i>' + project.date + ' <span class="comments"><i class="fas fa-eye"></i>' + project.views + ' views</span></p>' +
+                        '</div>' +
+                      '</div>';
+
+            // Append card HTML to cards-wrapper
+            $('.cards-wrapper').append(cardHTML);
+        });
+    });
 });
