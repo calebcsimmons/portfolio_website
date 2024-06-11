@@ -164,8 +164,17 @@ body.dark-mode p {
     color: #fff
 }
 
-body.dark-mode .heading-one {
+body.dark-mode {
     .cardcontainer {
-        background-color: black;
+        background-color: darkgray;
     }
+
+    .txt4 {
+        color: black;
+    }
+    
+    .txt3 {
+        color: white;
+    }
+
 }
