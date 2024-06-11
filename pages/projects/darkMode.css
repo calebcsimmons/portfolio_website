@@ -65,9 +65,9 @@ body.dark-mode #updates {
 }
 
 .top-dark-mode-button:after {
-    content: 'DARK';
+    content: 'LIGHT';
     position: absolute;
-    color: #fff;
+    color: black;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -79,8 +79,8 @@ body.dark-mode #updates {
 }
 
 body.dark-mode .top-dark-mode-button:after {
-    content: 'LIGHT';
-    color: var(--primary);
+    content: 'DARK';
+    color: white;
     top: 12px;
 }
 
