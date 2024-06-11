@@ -167,6 +167,10 @@ body.dark-mode p {
 body.dark-mode {
     .cardcontainer {
         background-color: darkgray;
+        border: 2px solid white; /* Add border color */
+
+    h1 {
+        color: white;
     }
 
     .txt4 {
