@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Footer button, optional
-    // darkModeToggleFooter.addEventListener('click', () => {
-    //     darkMode = localStorage.getItem("darkMode");
-    //     if (darkMode !== "enabled") {
-    //         enableDarkMode();
-    //     } else {
-    //         disableDarkMode();
-    //     }
-    // });
+    darkModeToggleFooter.addEventListener('click', () => {
+        darkMode = localStorage.getItem("darkMode");
+        if (darkMode !== "enabled") {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+    });
 });

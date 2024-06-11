@@ -12,7 +12,7 @@ $(document).ready(function() {
             // Create card HTML
             var cardHTML = '<div class="cardcontainer">' +
                                '<div class="photo">' +
-                                   '<img src="' + project.headerImage + '">' +
+                                   '<img src="' + project.cardImage + '">' +
                                    '<div class="tech">';
                                     
             // Loop through tech images
