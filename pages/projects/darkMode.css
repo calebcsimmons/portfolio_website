@@ -157,7 +157,7 @@ body.dark-mode .dark-toggle span {
 /* Begin adding your dark mode styles here, like so: */
 
 body.dark-mode {
-    background: #000
+    background: #191919
 }
 
 body.dark-mode p {
@@ -167,7 +167,8 @@ body.dark-mode p {
 body.dark-mode {
     .cardcontainer {
         background-color: darkgray;
-        border: 2px solid white; /* Add border color */
+        
+    }
 
     h1 {
         color: white;
@@ -180,5 +181,6 @@ body.dark-mode {
     .txt3 {
         color: white;
     }
+
 
 }
