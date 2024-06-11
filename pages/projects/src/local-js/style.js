@@ -1,18 +1,5 @@
 // Ensure the DOM is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', function() {
-    // Add click event listener to the heart icon
-    const heartIcon = document.getElementById('heart');
-    if (heartIcon) { // Check if heart icon exists
-        heartIcon.addEventListener('click', function() {
-            // Change color of .fa-gratipay icons to red
-            const gratipayIcons = document.querySelectorAll('.fa-gratipay');
-            gratipayIcons.forEach(function(icon) {
-                icon.style.color = '#E74C3C';
-            });
-        });
-    } else {
-        console.error("Heart icon not found!");
-    }
 
     /* Body */
     const body = document.querySelector('body');
@@ -48,17 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 disableDarkMode();
             }
         });
+
     } else {
         console.error("Dark mode toggle button not found!");
     }
 
     // Footer button, optional
-    darkModeToggleFooter.addEventListener('click', () => {
-        darkMode = localStorage.getItem("darkMode");
-        if (darkMode !== "enabled") {
-            enableDarkMode();
-        } else {
-            disableDarkMode();
-        }
-    });
+    if (darkModeToggleFooter) { // Check if footer dark mode toggle button exists
+        darkModeToggleFooter.addEventListener('click', () => {
+            darkMode = localStorage.getItem("darkMode");
+            if (darkMode !== "enabled") {
+                enableDarkMode();
+            } else {
+                disableDarkMode();
+            }
+        });
+    }
 });
