@@ -12,7 +12,6 @@
             "./images/nodeJs.png",
             "./images/graphQL.png"
         ]
-
     },
 
     {
@@ -27,7 +26,34 @@
             "./images/json.png",
             "./images/javascript.png"
         ]
+    },
 
+    {
+        "title": "Portfolio Website",
+        "description": "Crafted an elegant yet simple, full-stack website showcasing personal projects with seamless front and back-end integration",
+        "date": "06/10/2024",
+        "views": 214,
+        "cardImage": "./images/portfolioCard.png",
+        "techImages": [
+            "./images/html.png",
+            "./images/css.png",
+            "./images/json.png",
+            "./images/javascript.png"
+        ]
+    },
+
+    {
+        "title": "Portfolio Website",
+        "description": "Crafted an elegant yet simple, full-stack website showcasing personal projects with seamless front and back-end integration",
+        "date": "06/10/2024",
+        "views": 214,
+        "cardImage": "./images/portfolioCard.png",
+        "techImages": [
+            "./images/html.png",
+            "./images/css.png",
+            "./images/json.png",
+            "./images/javascript.png"
+        ]
     }
 ]
 
