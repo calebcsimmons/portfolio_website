@@ -1,4 +1,4 @@
-// Define the image paths in a JavaScript object
+// Define the image paths
 const imagePaths = {
     graphQL_header: "./images/graphQLHeader.png",
     python_icon: "./images/python.png",

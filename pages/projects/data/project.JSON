@@ -1,0 +1,39 @@
+[
+    {
+        "headerImage": "./images/graphQLHeader.png",
+        "techImages": [
+            "./images/python.png",
+            "./images/apollo.png",
+            "./images/cpp.png",
+            "./images/nodeJs.png",
+            "./images/graphQL.png"
+        ],
+        "title": "GraphQL API",
+        "description": "Developed a GraphQL API solution using Apollo Server 4 to perform queries and modify data",
+        "date": "06/10/2024",
+        "views": 214
+    },
+    {
+        "headerImage": "https://images.pexels.com/photos/2346006/pexels-photo-2346006.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500",
+        "techImages": [
+            "python.png",
+            "Cpp.png",
+            "./images/graphQL.png"
+        ],
+        "title": "GraphQL API",
+        "description": "Developed a GraphQL API solution using Apollo Server 4 to perform queries and modify data",
+        "date": "06/10/2024",
+        "views": 214
+    },
+    {
+        "headerImage": "https://images.pexels.com/photos/2346006/pexels-photo-2346006.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500",
+        "techImages": [
+            "python.jpeg",
+            "Cpp.png"
+        ],
+        "title": "GraphQL API",
+        "description": "Developed a GraphQL API solution using Apollo Server 4 to perform queries and modify data",
+        "date": "06/10/2024",
+        "views": 214
+    }
+]
