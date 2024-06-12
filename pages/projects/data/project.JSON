@@ -36,6 +36,7 @@
         "techImages": [
             "./images/cpp.png",
             "./images/openGL.png",
+            "./images/processing.png",
             "./images/java.png"
         ]
     }
