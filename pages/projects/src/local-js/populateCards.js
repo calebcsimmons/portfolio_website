@@ -17,6 +17,7 @@ $(document).ready(function() {
                                     
             // Loop through tech images
             $.each(project.techImages, function(index, techImage) {
+                console.log("Processing tech image:", techImage);
                 cardHTML += '<img src="' + techImage + '"><br>';
             });
                                     
@@ -35,5 +36,7 @@ $(document).ready(function() {
             // Append card HTML to cards-wrapper
             $('.cards-wrapper').append(cardHTML);
         });
+    }).fail(function(jqxhr, textStatus, error) {
+        console.error("Error loading JSON:", textStatus, error);
     });
 });
