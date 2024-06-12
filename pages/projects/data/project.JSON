@@ -35,7 +35,8 @@
         "cardImage": "./images/simulationCard.png",
         "techImages": [
             "./images/cpp.png",
-            "./images/openGL.png"
+            "./images/openGL.png",
+            "./images/java.png"
 
         ]
     }
