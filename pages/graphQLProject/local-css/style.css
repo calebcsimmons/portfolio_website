@@ -1,9 +1,76 @@
-
-
-.banner-image {
-    width: 100%;
-    height: 50rem;
-    display: block;
+/* Reset margins and padding for body and html */
+body, html {
     margin: 0;
     padding: 0;
 }
+
+/* Override global styles that affect margins and paddings */
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Use full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/graphQLbanner.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for banner content */
+.banner-content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%; /* Position at the top */
+    left: 0;
+    right: 0;
+    padding: 50px 20px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner-content a {
+    font-size: 1.5rem;
+    background-color: #ecbf94;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.3; /* Ensures vertical centering */
+}
+
+.banner-content a:hover {
+    background-color: hsl(var(--hue), var(--sat), 57%);
+}
+
+/* Dark mode button */
+.dark-mode-button {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.dark-toggle {
+    color: white; 
+}
+
