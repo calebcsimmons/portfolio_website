@@ -1,5 +1,3 @@
-// server/routes/updateViews.js
-
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -19,20 +17,20 @@ router.post('/', (req, res) => {
             const projects = JSON.parse(data);
             const project = projects.find(proj => proj.id === projectId);
 
-            if (project) {
-                project.views += 1;
-
-                fs.writeFile(dataFilePath, JSON.stringify(projects, null, 2), 'utf8', (err) => {
-                    if (err) {
-                        console.error("Error writing file:", err);
-                        return res.status(500).send('Error writing file');
-                    }
-
-                    res.json({ views: project.views });
-                });
-            } else {
-                res.status(404).send('Project not found');
+            if (!project) {
+                return res.status(404).send('Project not found');
             }
+
+            project.views += 1;
+
+            fs.writeFile(dataFilePath, JSON.stringify(projects, null, 2), 'utf8', (err) => {
+                if (err) {
+                    console.error("Error writing file:", err);
+                    return res.status(500).send('Error writing file');
+                }
+
+                res.json({ views: project.views });
+            });
         } catch (err) {
             console.error("Error parsing JSON:", err);
             res.status(500).send('Error parsing JSON');

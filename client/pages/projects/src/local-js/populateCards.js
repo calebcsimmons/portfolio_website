@@ -1,26 +1,5 @@
 // client/js/populateCards.js
 
-// Function to update views (define in global scope)
-window.updateViews = function(projectId, callback) {
-    $.ajax({
-        url: '/update-views',
-        method: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify({ id: projectId }),
-        success: function(response) {
-            $('#' + projectId + '-views').text(response.views + ' views');
-            if (callback) {
-                callback();
-            }
-        },
-        error: function(jqxhr, textStatus, error) {
-            console.error("Error updating views:", textStatus, error);
-            if (callback) {
-                callback();
-            }
-        }
-    });
-};
 
 $(document).ready(function() {
     console.log("Document ready");
@@ -60,8 +39,8 @@ $(document).ready(function() {
                 '<p class="txt5">' + project.description + '</p>' +
             '</div>' +
             '<div class="footer">' +
-                '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '()">Read More</a><a class="heart"></a></p>' +
-                '<p class="txt3"><i class="far fa-clock"></i>' + project.date + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></p>' +
+                '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '(); updateViews(\'' + project.id + '\', \'' + functionName + '\')">Read More</a><a class="heart"></a></p>' +
+                '<p class="txt3"><i class="far fa-clock"></i>' + project.date + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></span></p>' +
             '</div>' +
           '</div>';
 

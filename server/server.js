@@ -4,6 +4,8 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+const updateViewsRouter = require('./routes/updateViews');
+
 // Middleware to parse JSON requests
 app.use(express.json());
 
