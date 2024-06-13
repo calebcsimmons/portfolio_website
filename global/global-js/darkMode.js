@@ -41,3 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+darkModeToggle.addEventListener('focus', () => {
+    darkModeToggle.blur(); // Remove focus immediately after it's applied
+});
