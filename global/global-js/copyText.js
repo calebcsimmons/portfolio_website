@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const copyText = document.querySelector('.footer__copy');
 
-    copyText.addEventListener('click', function() {
+    copyText.addEventListener('click', function(e) {
         const textArea = document.createElement('textarea');
         textArea.value = copyText.textContent.trim();
         document.body.appendChild(textArea);
@@ -9,20 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {
         document.execCommand('copy');
         document.body.removeChild(textArea);
 
-        // Create "Copied!" message
-        const copiedMessage = document.createElement('span');
-        copiedMessage.textContent = 'Copied!';
-        copiedMessage.classList.add('copied-message');
+        // Show tooltip near clicked area
+        const tooltip = document.createElement('div');
+        tooltip.textContent = 'Copied!';
+        tooltip.classList.add('tooltip');
 
-        // Append message next to the email address
-        copyText.parentNode.appendChild(copiedMessage);
+        // Position tooltip near clicked area
+        tooltip.style.top = e.clientY - 40 + 'px';  // Adjust as needed
+        tooltip.style.left = e.clientX + 20 + 'px'; // Adjust as needed
 
-        // Remove the message after a short delay
+        document.body.appendChild(tooltip);
+
+        // Hide tooltip after some time
         setTimeout(function() {
-            copiedMessage.parentNode.removeChild(copiedMessage);
-        }, 2000); // Adjust the time as needed
+            tooltip.parentNode.removeChild(tooltip);
+        }, 1000); // Adjust the time as needed
     });
-
-    // Optional: Change cursor to pointer on hover
-    copyText.style.cursor = 'pointer';
 });

@@ -382,30 +382,19 @@ img {
 
 /*=============== FOOTER ===============*/
 .footer__copy {
-    display: inline-block; /* Ensure it's treated as a block element but remains inline */
+    display: block;
     margin: 2.5rem 0 2rem;
     text-align: center;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
-    position: relative; /* Required for positioning the copied message */
 }
 
 .copied-message {
-    position: absolute;
-    top: 50%; /* Adjust vertically as needed */
-    right: calc(100% + 8px); /* Position to the right of the email address */
-    transform: translateY(-50%); /* Center vertically */
-    padding: 5px 10px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px;
+    margin-left: 8px; /* Adjust as needed */
     font-size: 14px;
+    color: #333;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
-
-.footer__copy:hover .copied-message {
-    opacity: 1;
 }
 
 /*=============== SCROLL BAR ===============*/
