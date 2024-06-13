@@ -1,9 +1,10 @@
 [
     {
+        "id": "proj001",
         "title": "GraphQL API",
         "description": "Engineered a robust GraphQL API solution leveraging Apollo Server 4 for efficient querying and seamless data manipulation",
         "date": "06/10/2024",
-        "views": 214,
+        "views": 0,
         "cardImage": "./images/GraphQLCard.png",
         "techImages": [
             "./images/python.png",
@@ -12,12 +13,12 @@
             "./images/graphQL.png"
         ]
     },
-
     {
+        "id": "proj002",
         "title": "Portfolio Website",
         "description": "Crafted an elegant yet simple, full-stack website showcasing personal projects with seamless front and back-end integration",
         "date": "06/10/2024",
-        "views": 214,
+        "views": 0,
         "cardImage": "./images/portfolioCard.png",
         "techImages": [
             "./images/html.png",
@@ -26,10 +27,10 @@
             "./images/javascript.png"
         ]
     },
-
     {
+        "id": "proj003",
         "title": "Machine Simulation",
-        "description": " ",
+        "description": "",
         "date": "coming soon...",
         "views": 0,
         "cardImage": "./images/simulationCard.png",
@@ -41,4 +42,3 @@
         ]
     }
 ]
-
