@@ -1,6 +1,6 @@
 /* Global styles for Dark Mode
 
-/* TEXT */
+/*=============== TEXTS ===============*/
 :root {
     --dark: #000;
     --medium: #1b1b1b;
@@ -32,14 +32,14 @@ body.dark-mode .txt4 {
 }
 
 
-/* ICONS */
+/*=============== ICONS ===============*/
 body.dark-mode .fa-moon,
 body.dark-mode .ri-github-line,
 body.dark-mode .ri-linkedin-box-line {
     color: white;
 }
 
-/* BUTTONS */
+/*=============== BUTTONS ===============*/
 .dark-mode-button {
     background: transparent;
     border: none;
@@ -77,7 +77,7 @@ body.dark-mode .top-dark-mode-button:after {
     top: 12px;
 }
 
-/* BACKGROUND */
+/*=============== BACKGROUND ===============*/
 body.dark-mode {
     background: #191919;
 }
@@ -86,7 +86,7 @@ body.dark-mode #updates {
     background: #000000;
 }
 
-/* CARD CONTAINER */
+/*=============== CARD CONTAINER ===============*/
 body.dark-mode .cardcontainer {
     background-color: darkgray;
     border: 2px solid white;
