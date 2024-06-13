@@ -1,6 +1,3 @@
-// client/js/populateCards.js
-
-
 $(document).ready(function() {
     console.log("Document ready");
 
@@ -9,8 +6,8 @@ $(document).ready(function() {
         return 'open' + title.replace(/[^a-zA-Z0-9]/g, '') + 'Page';
     }
 
-    // Load JSON data
-    $.getJSON('./data/project.json', function(data) {
+    // Load JSON data from server
+    $.getJSON('/data/project.json', function(data) {
         console.log("JSON loaded:", data);
 
         // Loop through each project in the JSON data
