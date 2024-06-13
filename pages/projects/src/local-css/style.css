@@ -1,3 +1,5 @@
+/*=============== BASE STYLES ===============*/
+
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +13,8 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/*=============== CARDS STYLES ===============*/
 
 .cards-wrapper {
     display: flex;
@@ -48,29 +52,19 @@ h1 {
     width: 100%;
 }
 
+/*=============== TEXT STYLES ===============*/
+
 .txt1 {
     margin: auto;
     text-align: center;
     font-size: 17px;
 }
 
-.content {
-    width: 80%;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: -33px;
-}
-
-
-.tech {
-    width: 25px;
-    height: auto;
-    color: black;
-    position: relative;
-    left: 90%;
-    font-size: 20px;
+.txt2 {
+    position: absolute;
+    top: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .txt4 {
@@ -82,20 +76,31 @@ h1 {
 
 .txt5 {
     position: relative;
-    top: 8px;
+    top: 2.5rem;
     max-width: 240px;
     color: black;
     font-size: 12px;
 }
 
-.txt2 {
-    position: absolute;
-    
-    top: 200px;
-    overflow: hidden;
-    
-    text-overflow: ellipsis;
+.content {
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -33px;
 }
+
+.tech {
+    width: 25px;
+    height: auto;
+    color: black;
+    position: relative;
+    left: 90%;
+    font-size: 20px;
+}
+
+/*=============== ANIMATION STYLES ===============*/
 
 .cardcontainer:hover > .photo {
     height: 200px;
@@ -115,6 +120,8 @@ h1 {
     height: 100px;
 }
 
+/*=============== FOOTER STYLES ===============*/
+
 .footer {
     width: 80%;
     height: 100px;
@@ -124,21 +131,11 @@ h1 {
     top: -15px;
 }
 
+/*=============== BUTTON STYLES ===============*/
+
 .btn {
     position: relative;
-    top: 20px;
-}
-
-#heart {
-    cursor: pointer;
-}
-
-.like {
-    float: right;
-    font-size: 22px;
-    position: relative;
-    top: 20px;
-    color: #333333;
+    top: 30px;
 }
 
 .fa-gratipay {
@@ -150,10 +147,12 @@ h1 {
     color: #E74C3C;
 }
 
+/*=============== DATE AND VIEWS STYLES ===============*/
+
 .txt3 {
     color: gray;
     position: relative;
-    top: 18px;
+    bottom: -3rem;
     font-size: 14px;
 }
 
@@ -167,14 +166,14 @@ h1 {
     margin-right: 7px;
 }
 
-/* Media query for smaller screens */
+/*=============== MEDIA QUERIES ===============*/
+
 @media only screen and (max-width: 768px) {
     .cardcontainer {
         width: calc((100% - 2 * 5%) / 2); /* Adjusted width for two cards per row */
     }
 }
 
-/* Media query for very small screens */
 @media only screen and (max-width: 480px) {
     .cards-wrapper {
         justify-content: center; /* Center cards on very small screens */

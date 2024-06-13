@@ -198,6 +198,21 @@ img {
 
 /*=============== BUTTONS ===============*/
 
+.button__home{
+    width: 10%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-family: var(--body-font);
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -233,6 +248,11 @@ img {
 }
 
 #darkModeToggle:hover .fa-sun {
+    color: var(--first-color); /* Replace with your specific color */
+}
+
+.button__home:hover,
+.button__home:hover .fa-home {
     color: var(--first-color); /* Replace with your specific color */
 }
 
@@ -289,7 +309,6 @@ img {
 .filters__button:hover {
     background-color: var(--body-color);
 }
-
 
 /*=============== PROJECTS ===============*/
 .projects__card {
