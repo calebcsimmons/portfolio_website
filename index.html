@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-	    <!-- FAVICON -->
-		<link rel="icon" type="image/x-icon" href="./landing/images/professional_headshot.JPG">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+	<!--=============== FAVICON ===============-->
+	<link rel="icon" type="image/x-icon" href="./landing/images/professional_headshot.JPG">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./pages/landing/style.css">
-
-    <!--=============== BOXICONS ===============-->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./global/global-css/darkMode.css">
 
     <title>Caleb C. Simmons</title>
 </head>
@@ -24,8 +26,13 @@
 <body>
     <!--=============== HEADER ===============-->
     <header class="profile container">
-        <!-- Theme button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <!-- Button for dark mode -->
+        <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle" id="darkModeToggle">
+            <span aria-hidden="true" class="dark-toggle">
+                <i class="fas fa-sun" id="darkModeIcon"></i>
+            </span>
+        </button>
 
         <div class="profile__container grid">
             <div class="profile__data">
@@ -114,7 +121,9 @@
             </span>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="./global/global-js/linking.js"></script>
+    <script src="./global/global-js/darkMode.js"></script>
     <script src="./global/global-js/cacheBust.js"></script>
 </body>
 
