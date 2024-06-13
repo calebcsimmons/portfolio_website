@@ -6,13 +6,6 @@
 
 :root {
     /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /*
-      Blue: hsl(207, 90%, 61%)
-      Purple: hsl(250, 66%, 75%)
-      Pink: hsl(356, 66%, 75%)
-      Teal: hsl(174, 63%, 62%)
-  */
     --hue: 207;
     --sat: 90%;
     --lig: 61%;
@@ -25,8 +18,8 @@
     --text-color-lighten: hsl(var(--hue), 8%, 92%);
     --body-color: hsl(var(--hue), 100%, 99%);
     --container-color: #fff;
+
     /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -83,24 +76,6 @@ img {
     height: auto;
 }
 
-
-/*=============== THEME ===============*/
-
-.change-theme {
-    position: absolute;
-    top: 1.5rem;
-    right: 0;
-    font-size: 1.25rem;
-    color: var(--title-color);
-    cursor: pointer;
-    transition: .3s;
-}
-
-.change-theme:hover {
-    color: var(--first-color);
-}
-
-
 /*========== Variables Dark theme ==========*/
 
 body.dark-theme {
@@ -108,36 +83,6 @@ body.dark-theme {
     --text-color: hsl(var(--hue), 12%, 75%);
     --body-color: hsl(var(--hue), 40%, 8%);
     --container-color: hsl(var(--hue), 24%, 12%);
-}
-
-
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
-
-.dark-theme .button__gray {
-    background-color: var(--container-color);
-}
-
-.dark-theme .button__gray:hover {
-    background-color: hsl(var(--hue), 24%, 16%);
-}
-
-.dark-theme .filters__content {
-    background-color: var(--container-color);
-}
-
-.dark-theme::-webkit-scrollbar {
-    background-color: hsl(var(--hue), 8%, 16%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--hue), 8%, 24%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(var(--hue), 8%, 32%);
 }
 
 
@@ -180,13 +125,6 @@ body.dark-theme {
     align-items: flex-end;
     justify-content: center;
 }
-
-
-/* 
-.profile__perfil img {
-  width: 75px;
-  border-radius: 50%;
-} */
 
 .profile__border {
     border: 3.5px solid var(--first-color);
