@@ -86,6 +86,10 @@ body.dark-mode .top-dark-mode-button:after {
     top: 12px;
 }
 
+body.dark-mode .footer__copy:hover {
+    color: var(--first-color-alt);
+}
+
 /*=============== BACKGROUND ===============*/
 body.dark-mode {
     background: #191919;

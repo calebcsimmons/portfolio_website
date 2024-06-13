@@ -397,6 +397,10 @@ img {
     transition: opacity 0.3s ease-in-out;
 }
 
+.footer__copy:hover {
+    color: var(--first-color);
+}
+
 /*=============== SCROLL BAR ===============*/
 
 ::-webkit-scrollbar {
