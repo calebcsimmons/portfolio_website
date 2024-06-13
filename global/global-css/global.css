@@ -236,6 +236,7 @@ img {
     color: var(--first-color); /* Replace with your specific color */
 }
 
+/* tooltip setup for the "copied" popup message using copyText () */
 .copy-tooltip {
     position: absolute;
     background-color: #000;
@@ -401,6 +402,11 @@ img {
     color: var(--first-color);
 }
 
+.footer__copy {
+    margin: 0rem 0 2.5rem;
+    cursor: pointer;
+}
+
 /*=============== SCROLL BAR ===============*/
 
 ::-webkit-scrollbar {
@@ -503,9 +509,5 @@ img {
     .skills__title {
         font-size: var(--normal-font-size);
         margin-bottom: 2.5rem;
-    }
-    .footer__copy {
-        margin: 0rem 0 2.5rem;
-        cursor: pointer;
     }
 }
