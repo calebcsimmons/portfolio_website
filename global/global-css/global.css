@@ -236,6 +236,28 @@ img {
     color: var(--first-color); /* Replace with your specific color */
 }
 
+.copy-tooltip {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none; /* Ensures the tooltip doesn't interfere with mouse events */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+
 /*=============== FILTERS TABS===============*/
 
 .filters__content {
@@ -360,11 +382,30 @@ img {
 
 /*=============== FOOTER ===============*/
 .footer__copy {
-    display: block;
+    display: inline-block; /* Ensure it's treated as a block element but remains inline */
     margin: 2.5rem 0 2rem;
     text-align: center;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+    position: relative; /* Required for positioning the copied message */
+}
+
+.copied-message {
+    position: absolute;
+    top: 50%; /* Adjust vertically as needed */
+    right: calc(100% + 8px); /* Position to the right of the email address */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer__copy:hover .copied-message {
+    opacity: 1;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -471,6 +512,7 @@ img {
         margin-bottom: 2.5rem;
     }
     .footer__copy {
-        margin: 4.5rem 0 2.5rem;
+        margin: 0rem 0 2.5rem;
+        cursor: pointer;
     }
 }

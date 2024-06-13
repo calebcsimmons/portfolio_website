@@ -17,7 +17,7 @@
 	<link rel="icon" type="image/x-icon" href="./landing/images/professional_headshot.JPG">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./pages/landing/style.css">
+    <link rel="stylesheet" href="./global/global-css/global.css">
     <link rel="stylesheet" href="./global/global-css/darkMode.css">
 
     <title>Caleb C. Simmons</title>
@@ -116,15 +116,18 @@
 
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
-        <span class="footer__copy">
-                calebcsimmons@outlook.com
-            </span>
+        <span class="footer__copy" id="copyText">
+            calebcsimmons@outlook.com
+        </span>
+        <span class="copy-tooltip" id="copyTooltip">Copied!</span>
     </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="./global/global-js/linking.js"></script>
     <script src="./global/global-js/darkMode.js"></script>
     <script src="./global/global-js/cacheBust.js"></script>
+    <script src="./global/global-js/copyText.js"></script>
 </body>
 
 </html>
