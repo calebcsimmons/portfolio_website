@@ -89,7 +89,6 @@ img {
     gap: 1.5rem;
 }
 
-
 /*=============== PROFILE ===============*/
 
 .profile {
@@ -129,13 +128,15 @@ img {
 
 .profile__name {
     font-size: var(--h2-font-size);
+    margin-bottom: 0.5rem;
 }
 
 .profile__profession {
     font-size: var(--smaller-font-size);
     font-weight: 500;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .profile__social {
@@ -143,6 +144,7 @@ img {
     justify-content: center;
     column-gap: .75rem;
 }
+
 
 .profile__social-link {
     font-size: 1.25rem;
@@ -155,9 +157,11 @@ img {
 }
 
 .profile__info {
-    grid-template-columns: repeat(3, max-content);
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    column-gap: 2.5rem;
+    gap: 2.5rem;
+    margin-top: -1rem;
 }
 
 .profile__info-group {
@@ -166,7 +170,7 @@ img {
 
 .profile__info-number {
     font-size: var(--normal-font-size);
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 .profile__info-description {
@@ -179,6 +183,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .profile__buttons {
@@ -187,6 +192,7 @@ img {
 
 .profile__buttons-small {
     column-gap: .25rem;
+    
 }
 
 
@@ -213,19 +219,22 @@ img {
 }
 
 .button__small {
-    padding: .75rem;
+    padding: -1rem;
     box-shadow: none;
 }
 
 .button__gray {
-    background-color: var(--text-color-lighten);
+    background-color: lightblue;
     color: var(--title-color);
 }
 
 .button__gray:hover {
-    background-color: var(--text-color-light);
+    background-color: var(--first-color-alt);
 }
 
+#darkModeToggle:hover .fa-sun {
+    color: var(--first-color); /* Replace with your specific color */
+}
 
 /*=============== FILTERS TABS===============*/
 

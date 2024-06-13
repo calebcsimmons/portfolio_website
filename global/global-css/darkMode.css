@@ -39,6 +39,15 @@ body.dark-mode .ri-linkedin-box-line {
     color: white;
 }
 
+body.dark-mode .profile__social-link:hover .ri-github-line,
+body.dark-mode .profile__social-link:hover .ri-linkedin-box-line {
+    color: var(--first-color-alt);
+}
+
+body.dark-mode #darkModeToggle:hover .fa-moon {
+    color: var(--first-color-alt); /* Replace with your specific color */
+}
+
 /*=============== BUTTONS ===============*/
 .dark-mode-button {
     background: transparent;
