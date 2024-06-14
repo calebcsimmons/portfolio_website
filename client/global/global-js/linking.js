@@ -15,5 +15,5 @@ function openPortfolioWebsitePage() {
 }
 
 function openMachineSimulationPage() {
-    window.location.href = "../machineSimulationProject/machineSimulation.html";
+    window.location.href = "../machineSimulationProject/index.html";
 }
