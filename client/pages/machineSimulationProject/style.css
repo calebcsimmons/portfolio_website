@@ -182,12 +182,14 @@
   font-family: STIX Two Text;
   font-weight: 600;
   line-height: 1.5;
+  text-align: center; /* Center text within .thq-heading-2 */
 }
 .thq-heading-3 {
   font-size: 26px;
   font-family: STIX Two Text;
   font-weight: 600;
   line-height: 1.5;
+  text-align: left;
 }
 .thq-body-large {
   font-size: 18px;
@@ -198,6 +200,8 @@
   font-size: 16px;
   font-family: Noto Sans;
   line-height: 1.5;
+  text-align: left;
+  margin-left: auto;
 }
 .thq-team-image-round {
   width: 80px;
@@ -250,7 +254,7 @@
   display: flex;
   overflow: hidden;
   position: relative;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .thq-flex-row {

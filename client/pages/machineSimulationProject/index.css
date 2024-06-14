@@ -371,18 +371,16 @@
 }
 
 .content-ToS-container {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ensure the container takes full width */
   display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center; /* Center contents horizontally */
+  text-align: left; /* Align text content to the left */
 }
 .content-ToS-max-width {
   width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .content-ToS-container1 {
@@ -401,8 +399,10 @@
   flex-direction: column;
 }
 .content-ToS-container3 {
-  align-self: stretch;
-  align-items: flex-start;
+  width: 100%; /* Ensure the container stretches to full width */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally within .content-ToS-container3 */
 }
 .content-ToS-li {
   align-items: flex-start;
