@@ -1,9 +1,30 @@
+// Example structure of populateCards.js
 $(document).ready(function() {
     console.log("Document ready");
 
     // Function to create function names based on project title
     function createFunctionName(title) {
         return 'open' + title.replace(/[^a-zA-Z0-9]/g, '') + 'Page';
+    }
+
+    // Function to update views
+    function updateViews(projectId) {
+        fetch('/update-views', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ id: projectId }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Updated views:', data.views);
+            // Update views count in the DOM if needed
+        })
+        .catch(error => {
+            console.error('Error updating views:', error);
+            // Handle error
+        });
     }
 
     // Load JSON data from server
@@ -36,7 +57,7 @@ $(document).ready(function() {
                 '<p class="txt5">' + project.description + '</p>' +
             '</div>' +
             '<div class="footer">' +
-                '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '(); updateViews(\'' + project.id + '\', \'' + functionName + '\')">Read More</a><a class="heart"></a></p>' +
+                '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '();">Read More</a></p>' +
                 '<p class="txt3"><i class="far fa-clock"></i>' + project.date + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></span></p>' +
             '</div>' +
           '</div>';

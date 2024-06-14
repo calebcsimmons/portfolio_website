@@ -12,9 +12,6 @@ app.use(express.static(path.join(__dirname, '../client')));
 // Serve project.json from the server/data directory
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-// Import and use routes
-const updateViewsRoute = require('./routes/updateViews');
-app.use('/update-views', updateViewsRoute);
 
 // Define a route to handle requests to the root URL
 app.get('/', (req, res) => {
