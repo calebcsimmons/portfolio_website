@@ -200,8 +200,8 @@
   font-size: 16px;
   font-family: Noto Sans;
   line-height: 1.5;
-  text-align: left;
-  margin-left: auto;
+  text-align: auto;
+
 }
 .thq-team-image-round {
   width: 80px;
@@ -216,8 +216,22 @@
   position: relative;
   align-items: center;
   flex-direction: column;
+  
 }
 .thq-section-max-width {
+  width: 100%;
+  max-width: var(--dl-size-size-maxwidth);
+}
+.thq-section2-padding {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-fiveunits);
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF6E1;
+}
+.thq-section2-max-width {
   width: 100%;
   max-width: var(--dl-size-size-maxwidth);
 }
@@ -498,6 +512,9 @@
   .thq-section-padding {
     padding: var(--dl-space-space-threeunits);
   }
+  .thq-section2-padding {
+    padding: var(--dl-space-space-threeunits);
+  }
   .thq-flex-column {
     gap: var(--dl-space-space-oneandhalfunits);
   }
@@ -534,6 +551,9 @@
 }
 @media(max-width: 479px) {
   .thq-section-padding {
+    padding: var(--dl-space-space-oneandhalfunits);
+  }
+  .thq-section2-padding {
     padding: var(--dl-space-space-oneandhalfunits);
   }
   .thq-flex-column {
