@@ -40,6 +40,13 @@
   border-radius: 4px;
   background-color: var(--dl-color-theme-neutral-light);
 }
+.content-section {
+  display: none; 
+  padding: 20px; 
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc; 
+  margin-bottom: 20px; 
+}
 .input {
   color: var(--dl-color-theme-neutral-dark);
   cursor: auto;
@@ -132,6 +139,7 @@
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
+  cursor: pointer;
 }
 .thq-button-outline:hover {
   fill: var(--dl-color-theme-secondary2);
