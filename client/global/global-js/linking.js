@@ -7,7 +7,7 @@ function openHomePage() {
 }
 
 function openGraphQLAPIPage() {
-    window.location.href = "../graphQLProject/graphQLProject.html";
+    window.location.href = "../graphQLProject/graphQL.html";
 }
 
 function openPortfolioWebsitePage() {
@@ -15,5 +15,5 @@ function openPortfolioWebsitePage() {
 }
 
 function openMachineSimulationPage() {
-    window.location.href = "../machineSimulationProject/index.html";
+    window.location.href = "../machineSimulationProject/machineSimulation.html";
 }
