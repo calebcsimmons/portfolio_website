@@ -58,7 +58,7 @@ $(document).ready(function() {
             '</div>' +
             '<div class="footer">' +
                 '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '();">Read More</a></p>' +
-                '<p class="txt3"><i class="far fa-clock"></i>' + project.date + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></span></p>' +
+                '<p class="txt3"><i class="far fa-clock"></i>' + project.date /* + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></span></p>'*/ +
             '</div>' +
           '</div>';
 
