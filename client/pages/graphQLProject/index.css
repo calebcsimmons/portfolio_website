@@ -405,15 +405,18 @@
   align-items: center; /* Center items horizontally within .content-ToS-container3 */
 }
 .content-ToS-li {
-  align-items: flex-start;
+  width: 100%;
 }
 .content-ToS-heading7 {
   align-self: center;
   text-align: center;
 }
 .content-ToS-ul1 {
+  width: 100%;
   align-items: flex-start;
   padding-left: var(--dl-space-space-fiveunits);
+  display: flex;
+  flex-direction: column;
 }
 .content-ToS-container4 {
   align-self: stretch;
