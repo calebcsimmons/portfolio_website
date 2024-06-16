@@ -12,6 +12,13 @@ app.use(express.static(path.join(__dirname, '../client')));
 // Serve project.json from the server/data directory
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
+// Middleware to set correct MIME type for .js files
+app.use((req, res, next) => {
+    if (req.url.endsWith('.js')) {
+        res.type('application/javascript');
+    }
+    next();
+});
 
 // Define a route to handle requests to the root URL
 app.get('/', (req, res) => {
