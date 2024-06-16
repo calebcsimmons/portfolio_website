@@ -278,6 +278,46 @@ img {
     z-index: 1000; /* Ensure it's above other elements */
 }
 
+/*=============== MODALS ===============*/
+
+/* modal for code previews */
+.code-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .code-pre {
+    white-space: pre-wrap; /* Ensures long lines of code wrap */
+    font-family: 'Courier New', Courier, monospace; /* Consistent monospace font */
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: auto;
+    max-height: calc(80vh - 100px); /* Adjust maximum height as needed */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
 
 /*=============== FILTERS TABS===============*/
 

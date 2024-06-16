@@ -194,6 +194,8 @@
   text-align: center; /* Center text within .thq-heading-2 */
 }
 .thq-heading-3 {
+  width: 100%;
+  text-align: center;
   font-size: 26px;
   font-family: STIX Two Text;
   font-weight: 600;
@@ -201,16 +203,23 @@
   text-align: left;
 }
 .thq-body-large {
+  color: black;
   font-size: 18px;
   font-family: Noto Sans;
   line-height: 1.5;
 }
 .thq-body-small {
+  color: black;
   font-size: 16px;
   font-family: Noto Sans;
   line-height: 1.5;
   text-align: auto;
-
+}
+.thq-button-small {
+  font-size: 16px;
+  font-family: Noto Sans;
+  line-height: 1.5;
+  text-align: auto;
 }
 .thq-team-image-round {
   width: 80px;

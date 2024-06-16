@@ -11,12 +11,12 @@
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
+
     <style data-tag="default-style-sheet">
       html {
         font-family: Inter;
         font-size: 16px;
       }
-
       body {
         font-weight: 400;
         font-style:normal;
@@ -58,6 +58,7 @@
 
   <body>
     <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="../../global/global-css/global.css" >
     <div>
       <link href="./index.css" rel="stylesheet" >
 
@@ -76,19 +77,19 @@
                 <span>GraphQL API</span>
               </h1>
               <p class="banner-text thq-heading-1-author"> 
-                  <span>By: Caleb Simmons</span>
+                <span>By: Caleb Simmons</span>
               </p>
               <p class="banner-text1 thq-body-large">
                 <span>Engineered a robust GraphQL API solution leveraging Apollo Server 4 for efficient querying and seamless data manipulation.</span>
               </p>
               <div class="banner-actions">
                 <a href="https://github.com/calebcsimmons/odyssey-lift-off-part1" target="_blank" class="thq-button-filled banner-button">
-                  <span class="banner-text2 thq-body-small">
+                  <span class="banner-text2 thq-button-small">
                     <span>View Code</span>
                   </span>
                 </a>
                 <a href="https://github.com/calebcsimmons/odyssey-lift-off-part1" target="_blank" class="thq-button-filled banner-button1">
-                  <span class="banner-text3 thq-body-small">
+                  <span class="banner-text3 thq-button-small">
                     <span>Visit Website</span>
                   </span>
                 </a>
@@ -104,11 +105,11 @@
               <span class="thq-body-small">
                 <span> </span>
               </span>
-              <h2 class="thq-heading-2 process-text1">
-                <span>Development Process</span>
+              <h2 class="thq-heading-2 stats01-title">
+                <span>Development Overview</span>
               </h2>
               <p class="process-text2 thq-body-large">
-                <span>How I updated a website to utilize GraphQL</span>
+                <span>How I enhanced a website with GraphQL integration</span>
               </p>
             </div>
 
@@ -125,7 +126,7 @@
                 </h3>
                 <span class="thq-body-small">
                   <span>
-                    Designed schema for an effective yet versatile querying and manipulation
+                    Defined essential data requirements and their frequency of use. Designed a robust and flexible schema for efficient querying and manipulation. 
                   </span>
                 </span>
               </div>
@@ -137,12 +138,12 @@
                   src="../graphQLProject/images/resolver.png"
                   class="thq-img-ratio-4-3"
                 >
-                <h3 class="thq-heading-3">
+                <h3 class="process-feature1-title thq-heading-3">
                   <span>Datasources and Resolvers</span>
                 </h3>
                 <span class="thq-body-small">
                   <span>
-                    Connected GraphQL to a REST datasource API and wrote resolver functions
+                    Integrated GraphQL with a RESTful data source API. Developed GraphQL resolver functions to enable efficient data retrieval and interaction.
                   </span>
                 </span>
               </div>
@@ -154,22 +155,22 @@
                   src="../graphQLProject/images/mutation.png"
                   class="thq-img-ratio-4-3"
                 >
-                <h3 class="thq-heading-3"><span>Mutations and Error Handling</span></h3>
+                <h3 class="process-feature1-title thq-heading-3"><span>Mutations and Error Handling</span></h3>
                 <span class="thq-body-small">
                   <span>
-                    Wrote mutation functions to update datasource in real-time. Implemented error handling for all queries and mutations.
+                    Developed mutation functions to facilitate real-time updates to the datasource. Implemented robust error handling for all queries and mutations.
                   </span>
                 </span>
               </div>
             </div>
 
             <div class="process-actions thq-flex-row">
-              <button class="process-button thq-button-filled">
-                <span class="thq-body-small"><span>See Resolvers</span></span>
+              <button class="process-button thq-button-filled" onclick="codeModal('./asetts/resolvers.js')">
+                <span class="thq-button-small"><span>See Resolvers</span></span>
               </button>
 
               <button class="process-button1 thq-button-outline">
-                <span class="thq-body-small"><span>See Mutations</span></span>
+                <span class="thq-button-small"><span>See Mutations</span></span>
               </button>
             </div>
           </div>
@@ -180,7 +181,7 @@
           <div class="demo-max-width thq-section-max-width">
             <div class="demo-column">
               <div class="demo-content">
-                <h1 class="demo-text thq-heading-1">
+                <h1 class="thq-heading-2 stats01-title">
                   <span>Video Demonstration</span>
                 </h1>
                 <p class="demo-text1 thq-body-large">
@@ -188,12 +189,12 @@
                 </p>
                 <div class="demo-actions">
                   <button class="thq-button-filled demo-button">
-                    <span class="thq-body-small">
+                    <span class="thq-button-small">
                       <span>View Projects</span>
                     </span>
                   </button>
                   <button class="thq-button-outline demo-button1">
-                    <span class="thq-body-small"><span>Learn More</span></span>
+                    <span class="thq-button-small"><span>Learn More</span></span>
                   </button>
                 </div>
               </div>
@@ -416,6 +417,7 @@
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts">
     </script>
     <script src="./local-js/filter.js"></script>
+    <script src="../../global/global-js/codeModal.js"></script>
 
   </body>
 </html>
