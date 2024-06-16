@@ -288,7 +288,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f9f9f9;
+    background-color: #8f8a8a; /* Default background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     max-width: 80%;
@@ -296,30 +296,40 @@ img {
     overflow: auto;
     padding: 20px;
     border-radius: 8px;
-  }
-  
-  .close-button {
+}
+
+.close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 2px; /* Adjust as needed */
+    right: 2px; /* Adjust as needed */
+    font-size: 30px;
     cursor: pointer;
-    color: #555;
-  }
-  
-  .code-pre {
-    white-space: pre-wrap; /* Ensures long lines of code wrap */
-    font-family: 'Courier New', Courier, monospace; /* Consistent monospace font */
-    font-size: 14px;
-    line-height: 1.5;
-    overflow-x: auto;
-    max-height: calc(80vh - 100px); /* Adjust maximum height as needed */
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    color: white;
+
+}
+
+/* Override Prism.js comment text color */
+.token.comment {
+    color: green !important; /* Text color for comments */
+}
+
+/* Override Prism.js background color */
+.code-modal pre {
+    /* background-color: #8f8a8a; Background color for code block */
     border-radius: 4px;
-  }
-  
+    padding: 10px;
+}
+
+/* Optional: Adjust specific language background */
+/* .code-modal pre.language-javascript {
+    color: ;
+} */
+
+/* Optional: Adjust specific language text color */
+.code-modal pre.language-javascript .token.comment {
+    color: green !important; /* Adjust comment text color for JavaScript */
+}
+
 
 /*=============== FILTERS TABS===============*/
 

@@ -22,21 +22,28 @@ function getBaseUrl() {
     return baseUrl;
 }
 
+// Array of script files to load
+let scriptFiles = [
+    'cacheBust.js',
+    'codeModal.js',
+    'copyText.js',
+    'darkMode.js',
+    'linking.js'
+];
+
 // Load external scripts and handle promise chain
 Promise.all([
     loadScript('https://cdn.jsdelivr.net/npm/prismjs/prism.js'),
-    loadScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+    loadScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'),
+    loadScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js')
 ])
 .then(() => {
     console.log('External scripts loaded successfully');
     // Load custom scripts after external scripts if necessary
-    return Promise.all([
-        loadScript(getBaseUrl() + 'cacheBust.js'),
-        loadScript(getBaseUrl() + 'codeModal.js'),
-        loadScript(getBaseUrl() + 'copyText.js'),
-        loadScript(getBaseUrl() + 'darkMode.js'),
-        loadScript(getBaseUrl() + 'linking.js')
-    ]);
+    let scriptPromises = scriptFiles.map(file => {
+        return loadScript(getBaseUrl() + file);
+    });
+    return Promise.all(scriptPromises);
 })
 .then(() => {
     console.log('Custom scripts loaded successfully');

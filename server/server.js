@@ -9,6 +9,9 @@ app.use(express.json());
 // Serve static files from the client directory
 app.use(express.static(path.join(__dirname, '../client')));
 
+// Serve global-js directory under /client path
+app.use('/client/global/global-js', express.static(path.join(__dirname, '../client/global/global-js')));
+
 // Serve project.json from the server/data directory
 app.use('/data', express.static(path.join(__dirname, 'data')));
 

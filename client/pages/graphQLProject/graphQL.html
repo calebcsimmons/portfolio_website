@@ -33,7 +33,7 @@
      <!--=============== CSS ===============-->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
     >
     <link
       rel="stylesheet"
@@ -169,14 +169,15 @@
             </div>
 
             <div class="process-actions thq-flex-row">
-              <button class="process-button thq-button-filled" onclick="codeModal('./asetts/resolvers.js')">
-                <span class="thq-button-small"><span>See Resolvers</span></span>
+              <button class="process-button thq-button-filled" onclick="codeModal('./assets/schema.js')">
+                  <span class="thq-button-small"><span>See Schema</span></span>
               </button>
-
-              <button class="process-button1 thq-button-outline">
-                <span class="thq-button-small"><span>See Mutations</span></span>
+      
+              <button class="process-button1 thq-button-outline" onclick="codeModal('./assets/resolvers.js')">
+                  <span class="thq-button-small"><span>See Functions</span></span>
               </button>
             </div>
+            
           </div>
         </div>
 
