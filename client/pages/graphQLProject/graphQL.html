@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta property="twitter:card" content="summary_large_image">
+    
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
@@ -31,40 +32,25 @@
     </style>
 
      <!--=============== CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
-    >
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    >
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    >
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    >
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    >
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    >
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" data-tag="font">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font">
+     <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css">
+     <link rel="stylesheet" href="./local-css/style.css">
+     <link rel="stylesheet" href="../../global/global-css/global.css">
+     
   </head>
 
   <body>
-    <link rel="stylesheet" href="./style.css" >
+    <!-- Project ID stored at the top level -->
+    <div id="project-id" style="display: none;">proj001</div>
+    
+    <link rel="stylesheet" href="./local-css/style.css" >
     <link rel="stylesheet" href="../../global/global-css/global.css" >
     <div>
-      <link href="./index.css" rel="stylesheet" >
+      <link href="./local-css/index.css" rel="stylesheet" >
 
        <!--=============== HEADER BANNER SECTION ===============-->
       <div class="home-container">
@@ -331,145 +317,43 @@
 
             <!--=============== TECH STACK ===============-->
             <div id="learn-more" class="content-section thq-flex-column" style="display:none;">
-              <div class="tech__content grid" data-content id="tech">
-
-                <!--LANGUAGES-->
-                <div class="tech__area">
-                  <h3 class="tech__title">Languages</h3>
-                  <div class="tech__box">
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/html.png"> 
-                          </h3>
-                        </div>
+              <!-- Tech stack section -->
+              <div class="tech__content grid" id="tech">
+                  <!-- LANGUAGES -->
+                  <div class="tech__area" data-category="Languages">
+                      <h3 class="tech__title">Languages</h3>
+                      <div class="tech__box">
+                          <!-- Placeholder for dynamically populated content -->
                       </div>
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/css.png"> 
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/javascript.png"> 
-                          </h3>
-                        </div>
-                      </div>
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/graphQL.png"> 
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
-                </div>
-
-                <!--FRAMEWORKS AND LIBRARIES-->
-                <div class="tech__area">
-                  <h3 class="tech__title">Frameworks & Libraries</h3>
-                  <div class="tech__box">
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/react.png"> 
-                          </h3>
-                        </div>
+                  <!-- FRAMEWORKS AND LIBRARIES -->
+                  <div class="tech__area" data-category="Frameworks & Libraries">
+                      <h3 class="tech__title">Frameworks & Libraries</h3>
+                      <div class="tech__box">
+                          <!-- Placeholder for dynamically populated content -->
                       </div>
-                    </div>
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/nodejs.png"> 
-                          </h3>
-                        </div>
-                      </div>
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/apollo.png"> 
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
-                </div>
-
-                <!--DATABASES-->
-                <div class="tech__area">
-                  <h3 class="tech__title">Databases</h3>
-                  <div class="tech__box">
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src=""> 
-                          </h3>
-                        </div>
+                  <!-- DATABASES -->
+                  <div class="tech__area" data-category="Databases">
+                      <h3 class="tech__title">Databases</h3>
+                      <div class="tech__box">
+                          <!-- Placeholder for dynamically populated content -->
                       </div>
-                    </div>
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src=""> 
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
-                </div>
-
-                <!--TOOLS-->
-                <div class="tech__area">
-                  <h3 class="tech__title">Tools</h3>
-                  <div class="tech__box">
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/git.png"> 
-                          </h3>
-                        </div>
+                  <!-- TOOLS -->
+                  <div class="tech__area" data-category="Tools">
+                      <h3 class="tech__title">Tools</h3>
+                      <div class="tech__box">
+                          <!-- Placeholder for dynamically populated content -->
                       </div>
-                    </div>
-
-                    <div class="tech__group">
-                      <div class="tech__data">
-                        <div>
-                          <h3 class="tech__name">
-                            <img src="../../global/img/github.png"> 
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
-                </div>
-                </div>
+              </div>
             </div>
+          
+          
+          
+            
 
-            </div>
-            </div>
 
             <!-- TERMS OF SERVICE -->
             <div id="terms-of-service" class="content-section thq-flex-column" style="display:none;">
@@ -521,8 +405,10 @@
       defer=""
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./local-js/filter.js"></script>
     <script src="../../global/global-js/global.js"></script>
+    <script src="../../global/global-js/populateTechStack.js"></script>
 
   </body>
 </html>

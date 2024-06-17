@@ -422,24 +422,40 @@ img {
 
 .tech__box {
     display: flex;
-    justify-content: center;
-    column-gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .tech__group {
     display: grid;
-    align-content: flex-start;
-    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid columns */
+    justify-items: center; 
+    gap: 1rem;
 }
-
+.tech__area {
+    flex: 0 0 calc(50% - 20px); /* Two items per row with 20px margin on each side */
+    max-width: 100%;
+    margin: 20px; /* Adjust margin as needed */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    display: inline-block;
+    vertical-align: middle;
+}
 .tech__data {
-    display: flex;
-    column-gap: .5rem;
+    height: auto;
+    width: 75px;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .tech__data i {
-    font-size: 1rem;
-    color: var(--first-color);
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
 }
 
 .tech__name {

@@ -9,7 +9,15 @@
         "techStack": [
             "apollo",
             "nodeJs",
-            "graphQL"
+            "graphQL",
+            "python",
+            "openGL",
+            "javascript",
+            "github",
+            "css",
+            "git",
+            "cpp",
+            "java"
         ]
     },
     {
@@ -23,7 +31,10 @@
             "html",
             "css",
             "json",
-            "javascript"
+            "javascript",
+            "nodeJs",
+            "git",
+            "github"
         ]
     },
     {
