@@ -20,7 +20,7 @@ function populateTechStack(projectData, projectId) {
 
     // Define categories and their associated technologies
     var categories = {
-        'Languages': ['html', 'css', 'javascript', 'cpp', 'python', 'java'],
+        'Languages': ['html', 'c', 'c#', 'cpp', 'css', 'javascript', 'python', 'java', 'sql'],
         'Tools': ['git', 'github'],
         'Frameworks & Libraries': ['nodejs', 'apollo', 'graphql', 'react'],
         'Databases': ['mysql', 'mongodb', 'postgresql']
@@ -96,7 +96,10 @@ main();
 // Mapping from technology name to image path
 var techImagePaths = {
     'html': '../../global/img/html.png',
+    'c': '../../global/img/c.png',
     'css': '../../global/img/css.png',
+    'cpp': '../../global/img/cpp_icon.png',
+    'C#': '../../global/img/C#.png',
     'json': '../../global/img/json.png',
     'javascript': '../../global/img/javascript.png',
     'nodejs': '../../global/img/nodejs.png',
@@ -104,11 +107,11 @@ var techImagePaths = {
     'github': '../../global/img/github.png',
     'apollo': '../../global/img/apollo.png',
     'graphql': '../../global/img/graphql.png',
-    'cpp': '../../global/img/cpp_icon.png',
     'opengl': '../../global/img/opengl.png',
     'processing': '../../global/img/processing.png',
-    'python': '../../global/img/python_icon.png',
-    'java': '../../global/img/java.png'
+    'python': '../../global/img/python.png',
+    'java': '../../global/img/java.png',
+    'sql': '../../global/img/sql.png'
     // Add more mappings as needed
 };
 
