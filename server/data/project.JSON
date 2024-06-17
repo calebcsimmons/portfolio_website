@@ -7,9 +7,9 @@
         "views": 0,
         "cardImage": "./images/GraphQLCard.png",
         "techImages": [
-            "./images/apollo.png",
-            "./images/nodeJs.png",
-            "./images/graphQL.png"
+            "apollo",
+            "nodeJs",
+            "graphQL"
         ]
     },
     {
@@ -20,12 +20,13 @@
         "views": 0,
         "cardImage": "./images/portfolioCard.png",
         "techImages": [
-            "../../global/img/html.png",
-            "../../global/img/css.png",
-            "../../global/img/json.png",
-            "../../global/img/javascript.png"
+            "html",
+            "css",
+            "json",
+            "javascript"
         ]
     },
+    
     {
         "id": "proj003",
         "title": "Machine Simulation",
@@ -34,10 +35,10 @@
         "views": 0,
         "cardImage": "./images/simulationCard.png",
         "techImages": [
-            "./images/cpp.png",
-            "./images/openGL.png",
-            "./images/processing.png",
-            "./images/java.png"
+            "cpp",
+            "openGL",
+            "processing",
+            "java"
         ]
     }
 ]

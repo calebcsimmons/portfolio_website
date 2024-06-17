@@ -1,4 +1,3 @@
-// Example structure of populateCards.js
 $(document).ready(function() {
     console.log("Document ready");
 
@@ -27,6 +26,22 @@ $(document).ready(function() {
         });
     }
 
+    // Mapping from technology name to image path
+    var techImagePaths = {
+        'apollo': '../../global/img/apollo_icon.png',
+        'css': '../../global/img/css.png',
+        'cpp': '../../global/img/cpp_icon.png',
+        'graphQL': '../../global/img/graphQL.png',
+        'html': '../../global/img/html.png',
+        'json': '../../global/img/json.png',
+        'java': '../../global/img/java.png',
+        'javascript': '../../global/img/javascript.png',
+        'nodeJs': '../../global/img/nodeJs_icon.png',
+        'openGL': '../../global/img/openGL.png',
+        'processing': '../../global/img/processing.png',
+        // Add more as needed
+    };
+
     // Load JSON data from server
     $.getJSON('/data/project.json', function(data) {
         console.log("JSON loaded:", data);
@@ -44,10 +59,14 @@ $(document).ready(function() {
                                    '<img src="' + project.cardImage + '">' +
                                    '<div class="tech">';
 
-            // Loop through tech images
-            $.each(project.techImages, function(index, techImage) {
-                console.log("Processing tech image:", techImage);
-                cardHTML += '<img src="' + techImage + '"><br>';
+            // Loop through tech images and get paths
+            $.each(project.techImages, function(index, techName) {
+                var techImagePath = techImagePaths[techName];
+                if (techImagePath) {
+                    cardHTML += '<img src="' + techImagePath + '"><br>';
+                } else {
+                    console.error('No image path found for tech:', techName);
+                }
             });
 
             cardHTML += '</div>' +
