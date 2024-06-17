@@ -6,7 +6,7 @@
         "date": "06/10/2024",
         "views": 0,
         "cardImage": "./images/GraphQLCard.png",
-        "techImages": [
+        "techStack": [
             "apollo",
             "nodeJs",
             "graphQL"
@@ -19,7 +19,7 @@
         "date": "06/10/2024",
         "views": 0,
         "cardImage": "./images/portfolioCard.png",
-        "techImages": [
+        "techStack": [
             "html",
             "css",
             "json",
@@ -34,7 +34,7 @@
         "date": "coming soon...",
         "views": 0,
         "cardImage": "./images/simulationCard.png",
-        "techImages": [
+        "techStack": [
             "cpp",
             "openGL",
             "processing",

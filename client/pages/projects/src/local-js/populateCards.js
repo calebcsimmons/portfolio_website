@@ -59,8 +59,8 @@ $(document).ready(function() {
                                    '<img src="' + project.cardImage + '">' +
                                    '<div class="tech">';
 
-            // Loop through tech images and get paths
-            $.each(project.techImages, function(index, techName) {
+            // Loop through tech stack and get paths
+            $.each(project.techStack, function(index, techName) {
                 var techImagePath = techImagePaths[techName];
                 if (techImagePath) {
                     cardHTML += '<img src="' + techImagePath + '"><br>';
