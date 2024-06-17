@@ -39,7 +39,7 @@ $(document).ready(function() {
         'nodeJs': '../../global/img/nodeJs_icon.png',
         'openGL': '../../global/img/openGL.png',
         'processing': '../../global/img/processing.png',
-        // Add more as needed
+        
     };
 
     // Load JSON data from server
