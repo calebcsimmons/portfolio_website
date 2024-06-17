@@ -7,7 +7,6 @@
         "views": 0,
         "cardImage": "./images/GraphQLCard.png",
         "techImages": [
-            "./images/python.png",
             "./images/apollo.png",
             "./images/nodeJs.png",
             "./images/graphQL.png"
@@ -21,10 +20,10 @@
         "views": 0,
         "cardImage": "./images/portfolioCard.png",
         "techImages": [
-            "./images/html.png",
-            "./images/css.png",
-            "./images/json.png",
-            "./images/javascript.png"
+            "../../global/img/html.png",
+            "../../global/img/css.png",
+            "../../global/img/json.png",
+            "../../global/img/javascript.png"
         ]
     },
     {
