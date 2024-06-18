@@ -42,49 +42,50 @@ $(document).ready(function() {
         
     };
 
-    // Load JSON data from server
-    $.getJSON('/data/project.json', function(data) {
-        console.log("JSON loaded:", data);
+            // Load JSON data from server
+        $.getJSON('/data/project.json', function(data) {
+            console.log("JSON loaded:", data);
 
-        // Loop through each project in the JSON data
-        $.each(data, function(index, project) {
-            console.log("Processing project:", project);
+            // Loop through each project in the JSON data
+            $.each(data, function(index, project) {
+                console.log("Processing project:", project);
 
-            // Create a unique function name based on the project title
-            var functionName = createFunctionName(project.title);
+                // Create a unique function name based on the project title
+                var functionName = createFunctionName(project.title);
 
-            // Create card HTML
-            var cardHTML = '<div class="cardcontainer">' +
-                               '<div class="photo">' +
-                                   '<img src="' + project.cardImage + '">' +
-                                   '<div class="tech">';
+                // Create card HTML
+                var cardHTML = '<div class="cardcontainer" style="position: relative;">' +
+                                '<div class="photo">' +
+                                    '<img src="' + project.cardImage + '">' +
+                                    '<div class="tech techGroup">';
 
-            // Loop through tech stack and get paths
-            $.each(project.techStack, function(index, techName) {
-                var techImagePath = techImagePaths[techName];
-                if (techImagePath) {
-                    cardHTML += '<img src="' + techImagePath + '"><br>';
-                } else {
-                    console.error('No image path found for tech:', techName);
-                }
+                // Loop through tech stack and get paths
+                $.each(project.techStack, function(index, techName) {
+                    var techImagePath = techImagePaths[techName];
+                    if (techImagePath) {
+                        cardHTML += '<img class="techIcon" src="' + techImagePath + '">';
+                    } else {
+                        console.error('No image path found for tech:', techName);
+                    }
+                });
+
+                cardHTML += '</div>' +
+                '</div>' +
+                '<div class="content">' +
+                    '<p class="txt4">' + project.title + '</p>' +
+                    '<p class="txt5">' + project.description + '</p>' +
+                '</div>' +
+                '<div class="footer">' +
+                    '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '();">Read More</a></p>' +
+                    '<p class="txt3"><i class="far fa-clock"></i>' + project.date /* + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></span></p>'*/ +
+                '</div>' +
+            '</div>';
+
+                // Append card HTML to cards-wrapper
+                $('.cards-wrapper').append(cardHTML);
             });
-
-            cardHTML += '</div>' +
-            '</div>' +
-            '<div class="content">' +
-                '<p class="txt4">' + project.title + '</p>' +
-                '<p class="txt5">' + project.description + '</p>' +
-            '</div>' +
-            '<div class="footer">' +
-                '<p><a class="waves-effect waves-light btn" href="javascript:void(0);" onclick="' + functionName + '();">Read More</a></p>' +
-                '<p class="txt3"><i class="far fa-clock"></i>' + project.date /* + ' <span class="comments"><i class="fas fa-eye"></i> <span id="' + project.id + '-views">' + project.views + ' views</span></span></p>'*/ +
-            '</div>' +
-          '</div>';
-
-            // Append card HTML to cards-wrapper
-            $('.cards-wrapper').append(cardHTML);
+        }).fail(function(jqxhr, textStatus, error) {
+            console.error("Error loading JSON:", textStatus, error);
         });
-    }).fail(function(jqxhr, textStatus, error) {
-        console.error("Error loading JSON:", textStatus, error);
-    });
+
 });

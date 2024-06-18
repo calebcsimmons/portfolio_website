@@ -91,16 +91,46 @@ h1 {
     top: -33px;
 }
 
-.tech {
-    width: 25px;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    color: black;
-    position: relative;
-    left: 90%;
-    font-size: 20px;
+.techGroup {
+    width: 35px; /* Set the width for a single column of icons */
+    height: auto; /* Allow the height to adjust based on the number of icons */
+    max-height: 180px; /* Set a maximum height for the container */
+    position: absolute; /* Position it absolutely */
+    right: 1%; /* Align to the right side of the container */
+    top: 60%; /* Adjust as needed to position vertically */
+    overflow: hidden; /* Initially hide overflow */
+    padding-right: 5px; /* Adjust for scrollbar width */
+    box-sizing: border-box; /* Include padding in the total width */
+    overflow: auto;
 }
+
+.techGroup::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+    background-color: transparent; /* Make scrollbar track transparent */
+}
+
+.techGroup:hover::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar track on hover */
+}
+
+.techGroup::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Initially make scrollbar thumb transparent */
+    border-radius: 5px; /* Rounded corners of the thumb */
+}
+
+.techGroup:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb on hover */
+}
+
+.techIcon {
+    width: 10px; /* Adjust the width of the icons */
+    height: 10px; /* Adjust the height of the icons */
+    margin: 5px 0; /* Adjust spacing between icons */
+    color: black;
+    font-size: 20px;
+    display: block; /* Ensure each icon is on a new line */
+}
+
 
 /*=============== ANIMATION STYLES ===============*/
 
